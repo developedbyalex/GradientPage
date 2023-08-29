@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BBCode & HTML Text Colorizer</title>
+		<meta name="description" content="BBcode and HTML text effect generator. Create rainbow text effects and more for your blog or forum." />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<script src="./js/textcolorizer.js"></script>
+		<script src="js/jscolor/jscolor.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="navbar__header">
+				<a href="" class="navbar__brand">
+				<span style='font-weight:bold;'><span style='color:#E763F9;'>D</span><span style='color:#E769F8;'>e</span><span style='color:#E86FF7;'>v</span><span style='color:#E975F6;'>e</span><span style='color:#E97CF6;'>l</span><span style='color:#EA82F5;'>o</span><span style='color:#EB89F4;'>p</span><span style='color:#EC8FF3;'>e</span><span style='color:#EC95F3;'>d</span><span style='color:#ED9CF2;'>B</span><span style='color:#EEA2F1;'>y</span><span style='color:#EFA8F0;'>A</span><span style='color:#EFAFF0;'>l</span><span style='color:#F0B5EF;'>e</span><span style='color:#F1BBEE;'>x</span>
+				</a>
+			</div>
+			<div class="navbar__nav" id="navbarNav">
+				<ul>
+					<a href="index.html" class="navbar__href">
+						<li class="navbar__link active">Home</li>
+					</a>
+					<a href="https://developedbyalex.com/index.html#about" class="navbar__href">
+						<li class="navbar__link">About</li>
+					</a>
+					<a href="" class="navbar__href">
+						<li class="navbar__link">Tools</li>
+					</a>
+					<a href="index.html#about" class="navbar__href">
+						<li class="navbar__link">Hire Me!</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		<div class="space-under-navbar"></div>
+		<div id="div_content">
+			<div style="text-align: center;">
+				<span style="font-weight:bold;">Step 1:</span> Enter your text:<br/><br/>
+				<div style="text-align: center;">
+					<textarea id="input_text" rows="3" cols="30" style="display: block; margin: 0 auto;">DevelopedByAlex</textarea>
+				</div>
+				<br/>
+				<div style="text-align: center;">
+					<input id="input_color1" class='color {hash:true,caps:true}' value='#FF0000'><br/>
+					<input id="input_color2" class='color {hash:true,caps:true}' value='#0000FF'>
+				</div>
+				<br/>
+				<span style="font-weight:bold;">Step 2:</span> Choose the color effect:<br/><br/>
+				<div style="text-align: center;">
+					<select id="input_effect">
+						<option value="1">Horizontal gradient</option>
+						<option value="2">Middle gradient</option>
+						<option value="3">Three colored gradient</option>
+						<option value="4">Solid color</option>
+						<option value="5">Random colors</option>
+						<option value="6">Colors of the rainbow</option>
+					</select>
+				</div>
+				<br/>
+				<span style="font-weight:bold;">Step 3:</span> Additional text settings:<br/><br/>
+				<div style="text-align: center;">
+					Bold:<input type="checkbox" id="input_bold"/><br/>
+					Italic:<input type="checkbox" id="input_italic"/>
+				</div>
+			</div>
+		</div>
+		<br/><br/>
+		<div style="text-align: center;">
+			<span style="font-weight:bold;">Step 4:</span> Preview and get code:<br/><br/>
+		</div>
+		<div style="text-align: center;">
+			<div id="div_preview"></div>
+			<br/><br/>
+			BBcode for this text: (To use on forums)<br/>
+			<textarea id="output_bbcode" rows="5" cols="80" readonly="true"></textarea>
+			<br/><br/>
+			HTML code for this text: (To use on your website)<br/>
+			<textarea id="output_html" rows="5" cols="80" readonly="true"></textarea>
+			<script type="text/javascript">textcolorizer_handle();</script><br/><br/>
+		</div>
+        <script src="./js/textcolorizer.js"></script>
+	</body>
+</html>
